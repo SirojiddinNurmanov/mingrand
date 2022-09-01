@@ -1,11 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-    BrowserRouter as Router,
-    HashRouter,
-    Route,
-    Switch,
-} from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import HomeV2 from "./components/home-v2";
 import HomeV3 from "./components/home-v3";
 import ProptertyDetails from "./components/property-details";
@@ -22,31 +17,28 @@ import BlogDetails from "./components/blog-details";
 import "./components/i18n";
 
 const Root = () => {
-    return (
-        <HashRouter basename="/">
-            <div>
-                <Switch>
-                    <Route exact path="/" component={HomeV3} />
-                    <Route path="/home-v2" component={HomeV2} />
-                    <Route path="/home-v3" component={HomeV3} />
-                    <Route
-                        path="/property-details"
-                        component={ProptertyDetails}
-                    />
-                    <Route path="/property-grid" component={ProptertyGrid} />
-                    <Route path="/property" component={Propterty} />
-                    <Route path="/about" component={About} />
-                    <Route path="/team" component={Team} />
-                    <Route path="/sign-in" component={SignIn} />
-                    <Route path="/sign-up" component={SignUp} />
-                    <Route path="/add-property" component={AddProperty} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/blog" component={Blog} />
-                    <Route path="/blog-details" component={BlogDetails} />
-                </Switch>
-            </div>
-        </HashRouter>
-    );
+  return (
+    <HashRouter basename="/">
+      <div>
+        <Switch>
+          <Route exact path="/" component={HomeV3} />
+          <Route path="/home-v2" component={HomeV2} />
+          <Route path="/home-v3" component={HomeV3} />
+          <Route path="/property-details" component={ProptertyDetails} />
+          <Route path="/property-grid" component={ProptertyGrid} />
+          <Route path="/property" component={Propterty} />
+          <Route path="/about" component={About} />
+          <Route path="/team" component={Team} />
+          <Route path="/sign-in" component={SignIn} />
+          <Route path="/sign-up" component={SignUp} />
+          <Route path="/add-property" component={AddProperty} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/blog-details" component={BlogDetails} />
+        </Switch>
+      </div>
+    </HashRouter>
+  );
 };
 
 export default Root;

@@ -1334,7 +1334,7 @@ ul {
 .bg-overlay-2 {
     position: relative;
     background-size: cover !important;
-    background-position: !important;
+    background-position: center !important;
 }
 
 .bg-overlay-2:after {

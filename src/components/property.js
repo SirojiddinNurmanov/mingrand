@@ -6,15 +6,15 @@ import Footer from "./global-components/footer-v2";
 import { useTranslation } from "react-i18next";
 
 const PropertyPage = () => {
-    const { t, i18n } = useTranslation();
-    return (
-        <div>
-            <Navbar />
-            <PageHeader headertitle={t(`navbar.properties.property`)} />
-            <Property />
-            <Footer />
-        </div>
-    );
+  const { t } = useTranslation();
+  return (
+    <div>
+      <Navbar />
+      <PageHeader headertitle={t(`navbar.properties.property`)} />
+      <Property />
+      <Footer />
+    </div>
+  );
 };
 
 export default PropertyPage;
